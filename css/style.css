@@ -170,13 +170,29 @@ section .body{
     width: 100%;
     padding-top: 15px;
 }
+section .body h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+section .body figure{
+    margin: 0 auto;
+    width: 80%;
+}
+section .body p{
+    font-size: 19px;
+    line-height: 1.7;
+    padding: 20px 0;
+
+}
 section .body figure img{
+    width: 100%;
     border-radius: 15px;
-    box-shadow: 1px 9px 20px 9px #00000083;
-    transition: box-shadow 1s ease-out;
+    box-shadow: 1px 9px 20px 9px #00000062;
+    transition: box-shadow 1s ease-out, transform .5s linear;
 }
 section .body figure img:hover{
-    box-shadow: 1px 9px 20px 9px #000000bb;
+    box-shadow: 1px 9px 20px 9px #000000ef;
+    transform: translateY(-10px);
 }
 section#bbas3{
     background-color: #fdfd30;
@@ -184,21 +200,6 @@ section#bbas3{
 }
 section#bbas3 .header h2{
     color: #465efc;
-}
-section#bbas3 .body h2{
-    text-align: center;
-    padding-bottom: 10px;
-}
-section#bbas3 .body figure{
-    width: 100%;
-}
-section#bbas3 .body figure img{
-    width: 100%;
-}
-section#bbas3 .body p{
-    font-size: 19px;
-    padding: 20px 10px;
-    line-height: 1.7;
 }
 section#taee11{
     background-color: #fff;
@@ -215,17 +216,12 @@ section#taee11 .body h2{
 section#taee11 .body figure img{
     width: 100%;
 }
-section#taee11 .body p{
-    font-size: 19px;
-    line-height: 1.7;
-    padding: 20px 0;
-
-}
 section#klbn11{
     background-color: #00a15e;
     box-shadow: 0 0 25px 30px #00a15e;
     margin-top: 100px;
-    color: #eee;
+    color: #000;
+    font-weight: 700;
 }
 section#klbn11 .header{
     gap: 12px;
@@ -240,7 +236,11 @@ section#klbn11 .body h2{
 section#klbn11 .body h3{
     font-size: 17px;
     text-align: center;
-    padding-bottom: 15px;
+    padding: 15px 0;
+    color: #ddd;
+}
+section#klbn11 .body figure{
+    width: 100%;
 }
 section#klbn11 .body figure img{
     width: 100%;
@@ -257,6 +257,9 @@ footer{
     }
     section#bbas3 .header{
         gap: 0;
+    }
+    section .body figure{
+        width: 100%;
     }
 }
 @media (min-width: 1000px){
