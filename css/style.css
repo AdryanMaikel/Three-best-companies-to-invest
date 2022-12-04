@@ -213,9 +213,6 @@ section#taee11 .body h2{
     text-align: center;
     padding-bottom: 10px;
 }
-section#taee11 .body figure img{
-    width: 100%;
-}
 section#klbn11{
     background-color: #00a15e;
     box-shadow: 0 0 25px 30px #00a15e;
@@ -240,9 +237,6 @@ section#klbn11 .body h3{
     color: #ddd;
 }
 section#klbn11 .body figure{
-    width: 100%;
-}
-section#klbn11 .body figure img{
     width: 100%;
 }
 footer{
