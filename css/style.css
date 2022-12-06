@@ -174,6 +174,7 @@ section .body h2{
     text-align: center;
     padding-bottom: 20px;
 }
+section .body p,
 section .body figure{
     margin: 0 auto;
     width: 80%;
@@ -240,12 +241,114 @@ section#klbn11 .body figure{
     width: 100%;
 }
 footer{
+    margin: 0 0 0 0;
     position: relative;
-    top: 0;
+    top: 250px;
     width: 100%;
-    height: 300px;
+    background-color: #292e24;
+    color: #fff;
+}
+body.dark footer{
+    background-color: #fff3f3;
+    color: #000;
+}
+footer .wave{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/waveDark.png);
+    background-size: 1000px 100px;
+}
+body.dark footer .wave{
+    background: url(../img/waveWhite.png);
+    background-size: 1000px 100px;
+
+}
+footer .wave#wave1{
+    z-index: 2;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+    z-index: 1;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWaveTwo 4s linear infinite;
+}
+footer .wave#wave3{
+    z-index: 2;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 1;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWaveTwo 3s linear infinite;
+}
+@keyframes animateWave{
+    from{
+        background-position-x: 1000px;
+    }
+    to{
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWaveTwo{
+    from{
+        background-position-x: 0px;
+    }
+    to{
+        background-position-x: 1000px;
+    }
+}
+footer ul{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a i{
+    color: #fff;
+    font-size: 2rem;
+    transition: transform .5s ease-out, color .5s;
+}
+body.dark footer ul li a i{
+    color: #000;
+}
+footer ul li a:hover i{
+    transform: translate(0, -10px);
+    color: #ddd;
+}
+body.dark footer ul li a:hover i{
+    color: #000000bf;
+}
+footer address{
+    width: 100%;
+    text-align: center;
+    margin: 7px 0;
+}
+footer address i{
+    color: #ff1e00;
+    font-size: 1.1em;
+}
+footer marquee{
+    width: 100%;
+    height: 30px;
 }
 @media (max-width: 600px) {
+    header nav{
+        left: 0;
+    }
     section{
         width: 80%;
     }
@@ -262,5 +365,9 @@ footer{
     }
     section .header h2{
         font-size: 30px;
+    }
+    section#bbas3 .body figure,
+    section#taee11 .body figure{
+        width: 70%;
     }
 }
